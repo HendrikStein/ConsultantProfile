@@ -1,0 +1,97 @@
+{
+  "industry": "Industrie",
+  "name": "Erstellung einer Angebotsverwaltung",
+  "customer": "Brockhaus AG",
+  "role": "Softwareentwickler",
+  "start": "2009-05-01",
+  "end": "2009-09-01",
+  "teamSize": 5,
+  "process": "agil",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "Oracle",
+      "cat": "Datenbank",
+      "versions": [
+        "10g"
+      ]
+    },
+    {
+      "entry": "SQL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Tomcat",
+      "cat": "Infrastruktur",
+      "versions": [
+        "5.5"
+      ]
+    },
+    {
+      "entry": "Enterprise Architekt",
+      "cat": "Modellierung",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Hibernate",
+      "cat": "Framework",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Struts",
+      "cat": "Framework",
+      "versions": [
+        "1.2.9"
+      ]
+    },
+    {
+      "entry": "Spring",
+      "cat": "Framework",
+      "versions": [
+        "3.0"
+      ]
+    },
+    {
+      "entry": "ANT",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Hudson",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SVN",
+      "cat": "SCM",
+      "versions": []
+    }
+  ],
+  "ref": "",
+  "description": "Erstellung einer Webapplikation zur Angebotsverwaltung.",
+  "tasks": [
+    "Klassenmodellierung mit dem Enterprise Architect",
+    "Codegenerierung der modellierten Klassen",
+    "Implementierung von DAO`s mittels Hibernate",
+    "Implementierung der Geschäftslogik",
+    "Sprint Planung / Review / Retrospektive",
+    "Erstellung der Datenbank mittels Hibernate-Tools und ANT"
+  ]
+}

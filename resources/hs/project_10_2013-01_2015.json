@@ -1,0 +1,137 @@
+{
+  "industry": "Social Media",
+  "name": "Social Media Startup",
+  "customer": "The streaming community",
+  "role": "Softwareentwickler/Architekt",
+  "start": "2013-10-01",
+  "end": "2015-01-01",
+  "teamSize": 10,
+  "process": "agil",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "MongoDB",
+      "cat": "Datenbank",
+      "versions": [
+        "2.6.3"
+      ]
+    },
+    {
+      "entry": "Elasticsearch",
+      "cat": "Infrastruktur",
+      "versions": [
+        "1.0"
+      ]
+    },
+    {
+      "entry": "Hazelcast",
+      "cat": "Infrastruktur",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SQL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "mySQL",
+      "cat": "Datenbank",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "REST",
+      "cat": "Protokolle/APIs",
+      "versions": [
+        "Http 1.1"
+      ]
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions": [
+        "7",
+        "8"
+      ]
+    },
+    {
+      "entry": "Swagger",
+      "cat": "Framework",
+      "versions": []
+    },
+    {
+      "entry": "Guice",
+      "cat": "Framework",
+      "versions": [
+        "3.0"
+      ]
+    },
+    {
+      "entry": "Quartz",
+      "cat": "Framework",
+      "versions": [
+        "2.1.5"
+      ]
+    },
+    {
+      "entry": "Google Guava",
+      "cat": "Framework",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Aspect J",
+      "cat": "Framework",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Jira",
+      "cat": "Ticketsystem",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Easymock",
+      "cat": "Framework",
+      "versions": [
+        "3.1"
+      ]
+    },
+    {
+      "entry": "Jenkins",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "ANT",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "GIT",
+      "cat": "SCM",
+      "versions": []
+    }
+  ],
+  "ref": "",
+  "description": "Weiterentwicklung im Bereich des Java Backends für eine Startup Internet Live Streaming Plattform. Die Plattform bietet die Möglichkeit mittels Smartphones(iOS bzw. Android) Live Streams zu veröffentlichen und diese in einem Zeit- und Ortsbezug darzustellen. Diese Streams können auf einen Web- oder Mobile App abgerufen und verwaltet werden.",
+  "tasks": [
+    "Ablösen der Apache Lucene Core Funktionalität durch Elasticsearch",
+    "Konfiguration des Elasticsearch Clusters und Anbindung der Volltextsuche in das bestehende Backend",
+    "Optimierung der Playlist Auslieferung bei Qualitätsschwankungen",
+    "Geo basierte Abfragen und Optimierungen",
+    "Aufbau eines Statistikservers",
+    "Qualitätssicherung des Backends",
+    "Abstimmung und Weiterentwicklung von neuen Features"
+  ]
+}

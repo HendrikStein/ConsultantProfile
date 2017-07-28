@@ -1,0 +1,110 @@
+{
+  "industry": "Versicherung",
+  "name": "Neuentwicklung einer Software zur Verwaltung von Brillenversicherungen",
+  "customer": "Brillenversicherung.de",
+  "role": "Softwareentwickler/Architekt",
+  "start": "2016-06-01",
+  "end": "2016-12-01",
+  "process": "agil",
+  "teamSize": 4,
+  "techStack": [
+    {
+      "entry": "IntelliJ",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "Javascript",
+      "cat": "Programmiersprache",
+      "versions": [
+        "ECMA 6"
+      ]
+    },
+    {
+      "entry": "ChartsJS",
+      "cat": "Framework",
+      "versions": []
+    },
+    {
+      "entry": "Swagger",
+      "cat": "Framework",
+      "versions": []
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions": [
+        "8"
+      ]
+    },
+    {
+      "entry": "MongoDB",
+      "cat": "Datenbank",
+      "versions": [
+        "3.2"
+      ]
+    },
+    {
+      "entry": "Spring Boot",
+      "cat": "Framework",
+      "versions": [
+        "4.3.8"
+      ]
+    },
+    {
+      "entry": "Spring Data(mongoDB)",
+      "cat": "Framework",
+      "versions": [
+        "4.3.8"
+      ]
+    },
+    {
+      "entry": "JHipster",
+      "cat": "Framework",
+      "versions": [
+        "3.0"
+      ]
+    },
+    {
+      "entry": "REST",
+      "cat": "Protokolle/APIs",
+      "versions": [
+        "Http 1.1"
+      ]
+    },
+    {
+      "entry": "GIT",
+      "cat": "SCM",
+      "versions": []
+    },
+    {
+      "entry": "Angular",
+      "cat": "Framework",
+      "versions": [
+        "1"
+      ]
+    },
+    {
+      "entry": "Maven",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Kanban",
+      "cat": "Projekt Management",
+      "versions": []
+    }
+  ],
+  "description": "Bereitstellung einer Software zur Erstellung und Verwaltung von Brillenversicherungen. Der Optiker hat die Möglichkeit mit seinen Kunden mittels iOS App eine Versicherung abzuschließen und direkt an den Versicherungsvermittler zu übermitteln.",
+  "ref": "http:\\\\www.brillenversicherung.de",
+  "tasks": [
+    "Entwicklung und Konzeption eines Rest basierten Backends",
+    "Entwicklung und Konzeption eines Web Clients zur Verwaltung der Versicherungen",
+    "Generierung der PDF Verträge aus den übermittelten Kundendaten",
+    "Unterstützung und Coaching bei der iOS App Entwicklung",
+    "Verteilung der iOS App im Appstore über iTunes Connect",
+    "Ermittlung und Visualisierung von Verkaufsstatistiken",
+    "Abstimmung der Arbeitspakete mit dem Kunden"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "industry": "Telekommunikation",
+  "name": "Weiterentwicklung und Softwarepflege im Telko Umfeld",
+  "customer": "T-Systems MMS Dresden",
+  "role": "Softwareentwickler",
+  "start": "2009-08-01",
+  "end": "2010-05-01",
+  "teamSize": 7,
+  "process": "agil",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "SQL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Oracle",
+      "cat": "Datenbank",
+      "versions": [
+        "10g"
+      ]
+    },
+    {
+      "entry": "Tomcat",
+      "cat": "Infrastruktur",
+      "versions": [
+        "5.5"
+      ]
+    },
+    {
+      "entry": "Spring",
+      "cat": "Framework",
+      "versions": [
+        "2.0.5"
+      ]
+    },
+    {
+      "entry": "Struts",
+      "cat": "Framework",
+      "versions": [
+        "1.2.9"
+      ]
+    },
+    {
+      "entry": "Hibernate",
+      "cat": "Framework",
+      "versions": [
+        "3.3"
+      ]
+    },
+    {
+      "entry": "Maven",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Jenkins",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Trac",
+      "cat": "Ticketsystem",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SVN",
+      "cat": "SCM",
+      "versions": []
+    }
+  ],
+  "ref": "",
+  "description": "Weiterentwicklung und Refrakturierung eines Dokumentenmanagementsystems auf Basis einer Webapplikation.",
+  "tasks": [
+    "Konzeption und Entwicklung eines eigenständigen Moduls, welches eine Web-Sitzung auf einen aktiven Benutzer begrenzt",
+    "Erweiterung des Fachkonzepts",
+    "Fehlerbehebung",
+    "Einführung der Schichtentrennung (MVC)",
+    "Implementierung von DAO`s mittels JDBC",
+    "Implementierung der Geschäftslogik",
+    "Implementierung von JUnit Tests zur Überprüfung der Datenbankschnittstellen und Geschäftslogik",
+    "Erstellung der Frontendlogik durch JSPs und Struts Controller"
+  ]
+}

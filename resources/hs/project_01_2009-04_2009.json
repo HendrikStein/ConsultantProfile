@@ -1,0 +1,43 @@
+{
+  "industry": "Versicherung",
+  "name": "Last- Performance und Skalierungstests",
+  "customer": "Brockhaus AG",
+  "role": "Softwareentwickler",
+  "start": "2009-03-01",
+  "end": "2009-05-01",
+  "teamSize": 4,
+  "process": "klassisch",
+  "techStack": [
+    {
+      "entry": "HP Quality Center",
+      "cat": "Test Tools",
+      "versions":[]
+    },
+    {
+      "entry": "HP Loadrunner",
+      "cat": "Test Tools",
+      "versions":[]
+    },
+    {
+      "entry": "HP Analyser",
+      "cat": "Test Tools",
+      "versions":[]
+    },
+    {
+      "entry": "C",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    }
+  ],
+  "ref": "",
+  "description": "Last-, Performance- und Skalierungstests eines Verwaltungssystems für Vertragsdaten",
+  "tasks": [
+    "Testkonzepterstellung",
+    "Konfiguration der Testumgebung",
+    "Testfalldefinition mit dem HP Quality Center",
+    "Testfallaufzeichnung mit dem HP Loadrunner",
+    "Testfallanpassung mittels C",
+    "Testfallauswertung mit dem HP Analyser"
+  ]
+}

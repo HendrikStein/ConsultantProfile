@@ -1,0 +1,68 @@
+{
+	"name": "Stein",
+	"surname": "Hendrik",
+	"pic": "https://avatars2.githubusercontent.com/u/6409256?v=3&s=460",
+	"title": [
+		"Fachinformatiker Anwendungsentwicklung",
+		"Diplom Informatik"
+	],
+	"birthday": "1979-04-17",
+	"company": "Jastech GmbH",
+	"position": "Softwareentwickler/Architekt",
+	"conclusion": "Das aufregende an meinem Job ist die Vielfalt, Flexibilität und ständige Innovation. Man befindet sich pausenlos am Zahn der Zeit, was einerseits aufregend ist andererseits kann es durchaus auch anstrengend sein und es ist nicht immer einfach den Überblick zu behalten. Häufig muss ich mich bremsen nicht allen Trends hinterherzulaufen und den Focus zu verlieren. Daher sehe ich als eine der größten Herausforderungen den Spagat zwischen innovativer und bewährter Technologie. Dabei setze ich gerne auf etablierte Architekturen und Softwarepattern gepaart mit aktuellen Trends. Ich mag es modulare Architekturen zu entwickeln, die offen für Erweiterungen sind und auch die Integration aktueller Trends zulassen. Dabei haben sich die Clean Code Praktiken und Prinzipien für mich bewährt. Als leidenschaftlicher Sportler mag ich es in kleineren agilen Teams zu arbeiten und ziehe meine Motivation und meine Begeisterungsfähigkeit aus der Gemeinschaft. Ein gutes Arbeitsklima und Spaß sind für mich sehr wichtige Voraussetzungen, um ein gutes Ergebnis zu erreichen.",
+	"languages": [
+		"Deutsch(fließend)",
+		"Englisch(fließend)"
+	],
+	"address": {
+		"street": "Rudolfstraße 5",
+		"zip": "48145",
+		"city": "Münster",
+		"phone": "0157 83311880",
+		"email": "hstein[at]jastech-solutions.de",
+		"internet": "http://www.jastech-solutions.de"
+	},
+	"vita": [
+		{
+			"station": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung bei der Wortmann KG",
+			"start": "1999-08-01",
+			"end": "2002-01-31"
+		},
+		{
+			"station": "Softwareentwickler bei der Wortmann KG",
+			"start": "2002-02-01",
+			"end": "2002-09-30"
+		},
+		{
+			"station": "Studium der Informatik an der Westfälischen Wilhelms Universität Münster",
+			"start": "2002-10-01",
+			"end": "2008-07-31"
+		},
+		{
+			"station": "Werksstudent als Softwareentwickler bei der Brockhaus AG",
+			"start": "2007-10-01",
+			"end": "2008-06-31"
+		},
+		{
+			"station": "Auslandsaufenthalt in Nord- und Mittelamerika",
+			"start": "2008-07-01",
+			"end": "2008-12-31"
+		},
+		{
+			"station": "Softwareentwickler bei der Brockhaus AG",
+			"start": "2009-01-01",
+			"end": "2009-12-31"
+		},
+		{
+			"station": "Geschäftsführer und Softwareentwickler bei der Jastech UG",
+			"start": "2010-01-01",
+			"end": "2016-12-31"
+		},
+		{
+			"station": "Geschäftsführer und Softwareentwickler bei der Jastech GmbH",
+			"start": "2017-01-01",
+			"end": null
+		}
+	]
+}
+

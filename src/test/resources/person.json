@@ -1,0 +1,68 @@
+{
+  "name": "Stein",
+  "surname": "Hendrik",
+  "pic": "https://avatars2.githubusercontent.com/u/6409256?v=3&s=460",
+  "title": [
+    "Fachinformatiker Anwendungsentwicklung",
+    "Dipl. Inform."
+  ],
+  "birthday": "1979-04-17",
+  "company": "Jastech GmbH",
+  "position": "Softwareentwickler/ Architekt",
+  "conclusion": "Bereits in der Schulzeit habe ich Interesse an Softwareentwicklung und Architektur gehabt und im Anschluss die ersten praktischen Erfahrungen durch meine Ausbildung als Anwendungsentwickler sammeln dürfen. Durch diese Erfahrung habe ich mich dazu entschlossen mein Wissen durch ein Studium weiter zu vertiefen. Dieses Interesse habe ich bis zum heutigen Tag nicht verloren und beschäftige mich leidenschftlich mit Technologien und Techniken aus dem Bereich der Softwareentwicklung. Dabei sehe ich meine fachlichen Schwerpunkte in der OO-Analyse, OO-Entwicklung. OO-Design sowie in der Konzeption von Backend und Web Anwendungen.",
+  "languages": [
+    "Deutsch(fließend)",
+    "Englisch(fließend)"
+  ],
+  "address": {
+    "street": "Rudolfstraße 5",
+    "zip": "48145",
+    "city": "Münster",
+    "phone": "0157 83311880",
+    "email": "hstein@jastech-solutions.de",
+    "internet": "http://www.jastech-solutions.de"
+  },
+  "vita": [
+    {
+      "station": "Ausbildung zum Fachinformatiker für Anwendungsentwicklung bei der Wortmann KG",
+      "start": "1999-08-01",
+      "end": "2002-01-31"
+    },
+    {
+      "station": "Softwareentwickler bei der Wortmann KG",
+      "start": "2002-02-01",
+      "end": "2002-09-30"
+    },
+    {
+      "station": "Studium der Informatik an der Westfälischen Wilhelms Universität Münster",
+      "start": "2002-10-01",
+      "end": "2008-07-31"
+    },
+    {
+      "station": "Werksstudent als Softwareentwickler bei der Brockhaus AG",
+      "start": "2007-10-01",
+      "end": "2008-06-31"
+    },
+    {
+      "station": "Auslandsaufenthalt in Nord- und Mittelamerika",
+      "start": "2008-07-01",
+      "end": "2008-12-31"
+    },
+    {
+      "station": "Softwareentwickler bei der Brockhaus AG",
+      "start": "2009-01-01",
+      "end": "2009-12-31"
+    },
+    {
+      "station": "Geschäftsführer und Softwareentwickler bei der Jastech UG",
+      "start": "2010-01-01",
+      "end": "2016-12-31"
+    },
+    {
+      "station": "Geschäftsführer und Softwareentwickler bei der Jastech GmbH",
+      "start": "2017-01-01",
+      "end": null
+    }
+  ]
+}
+

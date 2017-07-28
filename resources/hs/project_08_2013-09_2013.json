@@ -1,0 +1,62 @@
+{
+  "industry": "Social Media",
+  "name": "Stadtsport",
+  "customer": "Deutsche Sporthochschule",
+  "role": "Softwareentwickler/Architekt",
+  "start": "2013-08-01",
+  "end": "2013-09-01",
+  "teamSize": 3,
+  "process": "agil",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "SQL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "mySQL",
+      "cat": "Datenbank",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "Tomcat",
+      "cat": "Infrastruktur",
+      "versions": [
+        "6"
+      ]
+    },
+    {
+      "entry": "Vaadin",
+      "cat": "Framework",
+      "versions": [
+        "7"
+      ]
+    },
+    {
+      "entry": "Liferay",
+      "cat": "Framework",
+      "versions": [
+        "6.2"
+      ]
+    },
+    {
+      "entry": "GIT",
+      "cat": "SCM",
+      "versions": []
+    }
+  ],
+  "ref": "",
+  "description": "Entwicklung eines Portal Prototypen zur aktiven Bewegungsförderung. Das Ziel dieses Prototypen war es ein Gesundheitsportal für jung und alt zu entwerfen, mit dem man sich zum Sport treiben verabreden kann und zusätzlich Informationen zur Bewegungsförderung erhält. Der Prototyp soll von einer definierten Benutzergruppe getestet werden und das Feedback für eine produktionsreife Version gesammelt werden.",
+  "tasks": [
+    "Abstimmung und Abgrenzung der Funktionalität",
+    "Prototypische Implementierung der Portlets"
+  ]
+}

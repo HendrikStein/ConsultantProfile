@@ -1,0 +1,110 @@
+{
+  "industry": "Telekommunikation",
+  "name": "Webservice Entwicklung im Telko Umfeld",
+  "customer": "Netcologne",
+  "role": "Softwareentwickler",
+  "start": "2012-04-01",
+  "end": "2012-06-01",
+  "teamSize": 7,
+  "process": "agil/SCRUM",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "SOAP Webservices",
+      "cat": "Protokolle/APIs",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions": [
+        "6"
+      ]
+    },
+    {
+      "entry": "Oracle",
+      "cat": "Datenbank",
+      "versions": [
+        "10g"
+      ]
+    },
+    {
+      "entry": "Tomcat",
+      "cat": "Infrastruktur",
+      "versions": [
+        "7"
+      ]
+    },
+    {
+      "entry": "Apache CXF",
+      "cat": "Framework",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "PL/SQL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SQL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Apache Click",
+      "cat": "Framework",
+      "versions": [
+        "2.3"
+      ]
+    },
+    {
+      "entry": "Spring",
+      "cat": "Framework",
+      "versions": [
+        "3.0"
+      ]
+    },
+
+    {
+      "entry": "Maven",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Jenkins",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Jira",
+      "cat": "Ticketsystem",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SVN",
+      "cat": "SCM",
+      "versions": []
+    }
+  ],
+  "ref": "",
+  "description": "Pflege, Wartung und Weiterentwicklung von Web Services zur Anbindung an das Siebel CRM (Urlaubsvertretung).",
+  "tasks": [
+    "Mitentwicklung und prototypische Umsetzung eines Konzepts zum sicheren Download von Abrechnungsdaten für die Hausärzte durch das mTAN Verfahren",
+    "Umstellung des bestehenden SSO (Central Authentication Service - CAS) Anmeldeprozesses am Arztportal",
+    "Anbindung einer Teilnehmer -Onlineanmeldung für die practica 2013",
+    "Überarbeitung und Integration des bestehenden Erhebungslaufes und Rechnungserstellung für die gebuchten Fortbildungen",
+    "Sprint Planung / Review / Retrospektive",
+    "Sprint Abnahme beim Kunden vor Ort"
+  ]
+}

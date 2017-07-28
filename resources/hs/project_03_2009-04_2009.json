@@ -1,0 +1,90 @@
+{
+  "industry": "Industrie",
+  "name": "Entwicklung eines ERP Adapters",
+  "customer": "Brockhaus AG",
+  "role": "Softwareentwickler",
+  "start": "2009-03-01",
+  "end": "2009-05-01",
+  "teamSize": 4,
+  "process": "klassisch",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "SOAP Webservices",
+      "cat": "Protokolle/APIs",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions": [
+        "6"
+      ]
+    },
+    {
+      "entry": "Oracle",
+      "cat": "Datenbank",
+      "versions": [
+        "10g"
+      ]
+    },
+    {
+      "entry": "Tomcat",
+      "cat": "Infrastruktur",
+      "versions": [
+        "7"
+      ]
+    },
+    {
+      "entry": "Oracle Apex",
+      "cat": "Infrastruktur",
+      "versions": [
+        "3.1.2"
+      ]
+    },
+    {
+      "entry": "Amazon Simple DB",
+      "cat": "Datenbank",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Spring",
+      "cat": "Framework",
+      "versions": [
+        "3.0"
+      ]
+    },
+    {
+      "entry": "Maven",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Hudson",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SVN",
+      "cat": "SCM",
+      "versions": []
+    }
+  ],
+  "ref": "",
+  "description": "Anbindung der Amazon Simple DB mittels SOAP-Web Services an ein ERP System (Oracle Apex 3.1.2)",
+  "tasks": [
+    "Einrichten der Simple DB",
+    "Definition der Web Service Schnittstelle(WSDL)",
+    "Anbindung einer Teilnehmer -Onlineanmeldung für die practica 2013",
+    "Erstellung der Web Services",
+    "Anbindung der Webservices an das Oracle Apex System"
+  ]
+}

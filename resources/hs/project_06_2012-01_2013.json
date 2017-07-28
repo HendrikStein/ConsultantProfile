@@ -1,0 +1,134 @@
+{
+  "industry": "Social Media",
+  "name": "Social Media Startup",
+  "customer": "The streaming community",
+  "role": "Softwareentwickler",
+  "start": "2012-06-01",
+  "end": "2013-02-01",
+  "teamSize": 10,
+  "process": "agil/SCRUM",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions": []
+    },
+    {
+      "entry": "MongoDB",
+      "cat": "Datenbank",
+      "versions": [
+        "2.6.3"
+      ]
+    },
+    {
+      "entry": "Lucene",
+      "cat": "Framework",
+      "versions": [
+        "4.0"
+      ]
+    },
+    {
+      "entry": "mySQL",
+      "cat": "Datenbank",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "SQL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "REST",
+      "cat": "Protokolle/APIs",
+      "versions": [
+        "Http 1.1"
+      ]
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions": [
+        "7"
+      ]
+    },
+    {
+      "entry": "Guice",
+      "cat": "Framework",
+      "versions": [
+        "3.0"
+      ]
+    },
+    {
+      "entry": "Quartz",
+      "cat": "Framework",
+      "versions": [
+        "2.1.5"
+      ]
+    },
+    {
+      "entry": "Google Guava",
+      "cat": "Framework",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Aspect J",
+      "cat": "Framework",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Jira",
+      "cat": "Ticketsystem",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Easymock",
+      "cat": "Framework",
+      "versions": [
+        "3.1"
+      ]
+    },
+    {
+      "entry": "Jenkins",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "ANT",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "GIT",
+      "cat": "SCM",
+      "versions": []
+    }
+  ],
+  "ref": "",
+  "description": "Entwicklung im Bereich des Java Backends für eine Startup Internet Live Streaming Plattform. Die Plattform bietet die Möglichkeit mittels Smartphones(iOS bzw. Android) Live Streams zu veröffentlichen und diese in einem Zeit- und Ortsbezug darzustellen. Diese Streams können auf einen Web- oder Mobile App abgerufen und verwaltet werden.",
+  "tasks": [
+    "Erstellung eines Schedulers(mittles Quartz) zur Durchführung zyklischer Jobs ",
+    "Integration von Facebook zur Authentifizierung und Veröffentlichung von Plattforminternen Aktionen",
+    "Definition und Abstimmung der REST-Api mit den Frontend- Dataprocessing- und Mobile Team",
+    "Implementierung der Persistenzschicht und Anbindung an die Mongo DB",
+    "Verwaltung von Geo Daten",
+    "Erstellung von HLS Playlisten",
+    "Anbindung eines Memcaches mit Google Guava",
+    "Implementierung von RESTful Webservices",
+    "Implementierung von Geschäftlogik",
+    "Anbindung der Volltextsuche mit Lucene",
+    "Implementierung diverser Request und Response Filter",
+    "Erstellung einer JMX Schnittstelle zur externen Konfiguration der Anwendung",
+    "Implementierung von JUnit Tests",
+    "Erstellung des Object Modells auf Basis einer dokumentenorientieren Struktur",
+    "Unterstützung bei der Erstellung eines Big Data Konzepts zum Speichern der Daten",
+    "Durchführung von Code Reviews"
+  ]
+}

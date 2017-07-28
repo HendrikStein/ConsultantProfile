@@ -1,0 +1,46 @@
+{
+  "industry": "Fun",
+  "name": "Scoreboard",
+  "customer": "Privat",
+  "role": "Softwareentwickler/Architekt",
+  "start": "2017-04-01",
+  "end": "2017-05-01",
+  "teamSize": 1,
+  "process": "agil",
+  "techStack": [
+    {
+      "entry": "Javascript",
+      "cat": "Programmiersprache",
+      "versions": [
+        "ECMA 6"
+      ]
+    },
+    {
+      "entry": "Ionic",
+      "cat": "Framework",
+      "versions": [
+        "3"
+      ]
+    },
+    {
+      "entry": "Angular",
+      "cat": "Framework",
+      "versions": [
+        "2"
+      ]
+    },
+    {
+      "entry": "GIT",
+      "cat": "SCM",
+      "versions": []
+    }
+  ],
+  "ref": "http:\\\\www.weltrekord-marhorst.de",
+  "description": "Entwicklung einer iOS App zum Zählen von Tennis Spielständen und Generierung des Matchreports für den Weltrekord im Dauertennis.",
+  "tasks": [
+    "Visualisierung einer Anzeigetafel, auf der ein Schiedsrichter Punkte vergeben kann",
+    "Erstellung der Client Applikation",
+    "Erstellung der Logik zum Zählen von Tennis Spielständen",
+    "Verteilung der Software mit iTunes Connect und TestFlight"
+  ]
+}

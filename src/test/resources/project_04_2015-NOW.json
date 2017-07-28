@@ -1,0 +1,41 @@
+{
+  "industry": "Bank",
+  "name": "Osplus Portal Neo",
+  "customer": "Finanzinformatik",
+  "role": "Softwareentwickler",
+  "start": "2015-03-01",
+  "end": "2017-03-01",
+  "teamSize": 7,
+  "ref": "http:\\\\www.f-i.de",
+  "process":"agil/klassisch",
+  "techStack": [
+    {
+      "entry": "Websphere Application Server",
+      "cat": "Infrastruktur",
+      "versions":[]
+    },
+    {
+      "entry": "Javascript",
+      "cat": "Programmiersprache",
+      "versions":["ECMA 5"]
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions":["1.6"]
+    },
+    {
+      "entry": "Stapes Js",
+      "cat": "Framework",
+      "versions":[]
+    }
+  ],
+  "description":"Umstellung der bestehenden Giro Produktverkauf Portalanwendung auf eine moderne hybride Web Applikation mittels des OSPlus Neo Frameworks.",
+  "tasks": [
+    "Abstimmung und Abgrenzung der Funktionalität",
+    "Entwurf der Client Architektur unter Berücksichtigung der internen Sicherheitsvorgaben",
+    "Implementierung der Javascript Client Anwendung",
+    "Implementierung der Server Webservices und Geschäftslogik",
+    "Anbindung der Client Anwendung an die Webservices"
+  ]
+}

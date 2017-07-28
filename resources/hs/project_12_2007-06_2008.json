@@ -1,0 +1,95 @@
+{
+  "industry": "Diplomarbeit",
+  "name": "Diplomarbeit, SOA im Mittelstand am Beispiel der Brockhaus AG",
+  "customer": "Netcologne",
+  "role": "Softwareentwickler",
+  "start": "2007-12-01",
+  "end": "2008-07-01",
+  "teamSize": 1,
+  "process": "klassisch",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "Oracle JDeveloper",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "SOAP Webservices",
+      "cat": "Protokolle/APIs",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "REST",
+      "cat": "Protokolle/APIs",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "JEE",
+      "cat": "Programmiersprache",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "Oracle",
+      "cat": "Datenbank",
+      "versions": [
+        "10g"
+      ]
+    },
+    {
+      "entry": "Tomcat",
+      "cat": "Infrastruktur",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "Oracle SOA Suite",
+      "cat": "Modellierung",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "BPA Suite",
+      "cat": "Modellierung",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "ANT",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SVN",
+      "cat": "SCM",
+      "versions": []
+    }
+  ],
+  "ref": "",
+  "description": "Die Aufgabe bestand darin, sich mit der serviceorientierten Architektur im Mittelstand auseinanderzusetzen und eine Umsetzung anhand prototypischer Geschäftsvorgänge zu realisieren.",
+  "tasks": [
+    "Erarbeitung der Strategien, Modelle, Ziele und Realisierungsmöglichkeiten einer SOA",
+    "Einarbeitung in alle wesentlichen Standards wie SOAP, REST, WSDL, UDDI, BPEL",
+    "Erschließung der Modellebenen (Präsentations-, Orchestrations-, Service-, Integrations- und Applikationsebene) im Kontext einer SOA",
+    "Installation einer Oracle SOA Umgebung",
+    "Modellierung prototypischer Geschäftsvorgänge mittels der BPA-Suite",
+    "Entwicklung geeigneter Web Services und den dazugehörigen Schnittstellen"
+  ]
+}

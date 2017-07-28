@@ -1,0 +1,51 @@
+{
+  "industry": "Modebranche",
+  "name": "ERP-Entwicklung",
+  "customer": "Wortmann KG",
+  "role": "Softwareentwickler",
+  "start": "2002-01-01",
+  "end": "2002-11-01",
+  "teamSize": 10,
+  "process": "klassisch",
+  "techStack": [
+    {
+      "entry": "AS/400",
+      "cat": "Entwicklungsumgebung",
+      "versions": []
+    },
+    {
+      "entry": "(ILE)-RPG",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "CL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "C",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SQL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    }
+  ],
+  "ref": "",
+  "description": "Mitarbeit im Projekt 'Neues Vertriebsinformationssystem' und Programmierung von neuen Funktionen in der ERP-Software in ILE-RPG.",
+  "tasks": [
+    "Programmierung von Schnittstellen zwischen dem Vertiebsinformationssystem und dem individuell entwickelten ERP-System (AS/400, iSeries)",
+    "Administration und Einrichtung von Notebooks unter Windows NT/2000",
+    "Betreuung der Außendienstmitarbeiter bei technischen Problemen",
+    "Erweiterung des Ansprechpartnerstamms",
+    "Automatische HTML Listengenerierung aus Stammdaten",
+    "Implementierung diverser Erweiterungen und Betreuung der hauseigenen ERP-Software"
+  ]
+}

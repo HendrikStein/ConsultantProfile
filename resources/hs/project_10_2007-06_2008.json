@@ -1,0 +1,88 @@
+{
+  "industry": "Werkstudent",
+  "name": "Werkstudent",
+  "customer": "Brockhaus AG",
+  "role": "Softwareentwickler",
+  "start": "2007-10-01",
+  "end": "2008-07-01",
+  "teamSize": 10,
+  "process": "klassisch",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions": []
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "JEE",
+      "cat": "Programmiersprache",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "Oracle",
+      "cat": "Datenbank",
+      "versions": [
+        "10g"
+      ]
+    },
+    {
+      "entry": "SQL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Tomcat",
+      "cat": "Infrastruktur",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "Oracle SOA Suite",
+      "cat": "Modellierung",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "BPA Suite",
+      "cat": "Modellierung",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "ANT",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SVN",
+      "cat": "SCM",
+      "versions": []
+    },
+    {
+      "entry": "SOAP Webservices",
+      "cat": "Protokolle/APIs",
+      "versions": [
+      ]
+    }
+  ],
+  "ref": "",
+  "description": "Unterstützung bei Projekttätigkeiten.",
+  "tasks": [
+    "Pflegen des Qualitätsmanagements ",
+    "Erstellung von Web Services",
+    "Geschäftsmodellierung",
+    "Geschäftsprozessanalyse"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "industry": "Bank",
+  "name": "Migration und Neuentwicklung im Bankenumfeld",
+  "customer": "Finanzinformatik",
+  "role": "Softwareentwickler/Architekt",
+  "start": "2015-02-01",
+  "end": null,
+  "teamSize": 7,
+  "ref": "http:\\\\www.f-i.de",
+  "process":"agil/klassisch",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "Webstorm",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "Websphere Application Server",
+      "cat": "Infrastruktur",
+      "versions":[]
+    },
+    {
+      "entry": "Javascript",
+      "cat": "Programmiersprache",
+      "versions":["ECMA 5"]
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions":["6"]
+    },
+    {
+      "entry": "Stapes Js",
+      "cat": "Framework",
+      "versions":[]
+    },
+    {
+      "entry": "Jasmine Js",
+      "cat": "Framework",
+      "versions":[]
+    },
+    {
+      "entry": "Require Js",
+      "cat": "Framework",
+      "versions":[]
+    },
+    {
+      "entry": "Google Guice",
+      "cat": "Framework",
+      "versions":[]
+    },
+    {
+      "entry": "Svn",
+      "cat": "SCM",
+      "versions":[]
+    },
+    {
+      "entry": "ANT",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Maven",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "OsPlus",
+      "cat": "Framework",
+      "versions":[]
+    }
+  ],
+  "description":"Umstellung der bestehenden Giro Produktverkauf Portalanwendung auf eine moderne hybride Web Applikation mittels des OSPlus Neo Frameworks.",
+  "tasks": [
+    "Abstimmung und Abgrenzung der Funktionalität",
+    "Entwurf der Client Architektur unter Berücksichtigung der internen Sicherheitsvorgaben",
+    "Implementierung der Javascript Client Anwendung",
+    "Implementierung der Server Webservices und Geschäftslogik",
+    "Anbindung der Client Anwendung an die Webservices"
+  ]
+}

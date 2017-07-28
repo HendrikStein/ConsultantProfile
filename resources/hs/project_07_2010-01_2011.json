@@ -1,0 +1,134 @@
+{
+  "industry": "Gesundheitswesen",
+  "name": "Weiterentwicklung und Softwarepflege für den Deutschen Hausärtzteverband",
+  "customer": "Cologne Intelligence",
+  "role": "Softwareentwickler",
+  "start": "2010-07-01",
+  "end": "2011-01-01",
+  "teamSize": 5,
+  "process": "agil/SCRUM",
+  "techStack": [
+    {
+      "entry": "Eclipse",
+      "cat": "Entwicklungsumgebung",
+      "versions":[]
+    },
+    {
+      "entry": "SQL",
+      "cat": "Programmiersprache",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SOAP Webservices",
+      "cat": "Protokolle/APIs",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Java",
+      "cat": "Programmiersprache",
+      "versions": [
+        "6"
+      ]
+    },
+    {
+      "entry": "JEE",
+      "cat": "Programmiersprache",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "mySQL",
+      "cat": "Datenbank",
+      "versions": [
+        "5"
+      ]
+    },
+    {
+      "entry": "Tomcat",
+      "cat": "Infrastruktur",
+      "versions": [
+        "5.5"
+      ]
+    },
+    {
+      "entry": "Sun Glassfish",
+      "cat": "Infrastruktur",
+      "versions": [
+        "2.2.1"
+      ]
+    },
+    {
+      "entry": "EJB",
+      "cat": "Framework",
+      "versions": [
+        "3.0"
+      ]
+    },
+    {
+      "entry": "Apache Wicket",
+      "cat": "Framework",
+      "versions": [
+        "1.4.9"
+      ]
+    },
+    {
+      "entry": "Spring",
+      "cat": "Framework",
+      "versions": [
+        "2.0.5"
+      ]
+    },
+    {
+      "entry": "Struts",
+      "cat": "Framework",
+      "versions": [
+        "1.2.9"
+      ]
+    },
+    {
+      "entry": "Hibernate",
+      "cat": "Framework",
+      "versions": [
+        "3.3"
+      ]
+    },
+    {
+      "entry": "ANT",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Jenkins",
+      "cat": "Build",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "Mantis",
+      "cat": "Ticketsystem",
+      "versions": [
+      ]
+    },
+    {
+      "entry": "SVN",
+      "cat": "SCM",
+      "versions": []
+    }
+  ],
+  "ref": "",
+  "description": "Erweiterung des Fortbildungmoduls im Rahmen des HÄVG Verwaltungssystems. Das Fortbildungsmodul dient dazu die Verwaltung von Veranstaltungen und teilnehmenden Ärzten zu vereinfachen. Anbindung und Integration der Benutzerverwaltung des HÄVG - Arztportals in das Verwaltungssystems des Deutschen Hausärzteverbandes. Softwarepflege (Fehlerbeseitigung und Erweiterung des Verwaltungssystems.",
+  "tasks": [
+    "Erweiterung und Refakturierung der bestehenden Fortbildungsdatenbank an die neuen Anforderungen",
+    "Implementierung der neuen Modell Klassen",
+    "Implementierung von DAO`s mittels Hibernate",
+    "Implementierung von Geschäftslogik",
+    "Implementierung von JUnit Tests zur Überprüfung der Datenbankschnittstellen und Geschäftslogik",
+    "Erstellung der Frontendlogik durch JSPs und Struts Controller",
+    "Implementierung der Schnittstellen zwischen VS(Verwaltungssystem) und AP(Arztportal) mittels EJB 3.0",
+    "Coderefakturierung durch Anwendung der Clean Code Prinzipien und Verwendung von Erzeugungs-, Struktur und Verhaltensmustern"
+  ]
+}
