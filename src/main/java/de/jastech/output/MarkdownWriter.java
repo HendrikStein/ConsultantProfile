@@ -37,7 +37,7 @@ public class MarkdownWriter extends BaseOutputWriter implements OutputWriter {
 		this.writeProjects();
 		this.writeSkillMatrix();
 		this.writeIndustrySkillMatrix();
-		super.writeFile(this.outputDocName + ".md");
+		super.writeFile(this.outputDocName);
 	}
 
 	private void writePersonalInfo() {
