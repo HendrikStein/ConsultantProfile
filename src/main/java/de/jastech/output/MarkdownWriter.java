@@ -9,6 +9,9 @@ import net.steppschuh.markdowngenerator.table.Table;
 import net.steppschuh.markdowngenerator.text.Text;
 import net.steppschuh.markdowngenerator.text.heading.Heading;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Period;
 import java.util.*;
@@ -16,161 +19,166 @@ import java.util.*;
 /**
  * @author Hendrik Stein
  */
-public class MarkdownWriter extends BaseOutputWriter implements OutputWriter {
-	private final Profile profile;
-	private final ProfileService service;
-	private final ResourceBundle resourceBundle;
-	private final String outputDocName;
+public class MarkdownWriter extends OutputWriter {
+    private Profile profile;
+    private ProfileService service;
+    private StringBuilder output;
+    private ResourceBundle resourceBundle;
 
-	public MarkdownWriter(Profile profile, Locale locale, String outputDocName) {
-		this.profile = profile;
-		this.service = new ProfileService(profile);
-		this.resourceBundle = super.getResourceBundle(locale);
-		this.outputDocName = outputDocName;
-	}
 
-	@Override
-	public void write() {
-		this.writePersonalInfo();
-		this.writeIntroduction();
-		this.writeVita();
-		this.writeProjects();
-		this.writeSkillMatrix();
-		this.writeIndustrySkillMatrix();
-		super.writeFile(this.outputDocName);
-	}
+    public MarkdownWriter(Profile profile, Locale locale) {
+        this.output = new StringBuilder();
+        this.profile = profile;
+        this.service = new ProfileService(profile);
+        this.resourceBundle = super.getResourceBundle(locale);
+    }
 
-	private void writePersonalInfo() {
-		SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
-		this.output.append(new Heading(profile.getPerson().getSurname() + " " + profile.getPerson().getName()))
-				.append("\n");
-		Table.Builder tableBuilder = new Table.Builder().withAlignments(Table.ALIGN_CENTER).addRow("", "");
+    @Override
+    protected void writeFile(String filename) throws IOException {
+        BufferedWriter bw = new BufferedWriter(new FileWriter(filename + this.getFileType()));
+        bw.append(this.output);
+        bw.close();
+    }
 
-		tableBuilder.addRow(this.resourceBundle.getString("birthday"),
-				sdf.format(this.profile.getPerson().getBirthday()));
+    @Override
+    final String getFileType() {
+        return ".md";
+    }
 
-		tableBuilder.addRow(this.resourceBundle.getString("title"),
-				String.join(", ", this.profile.getPerson().getTitle()));
+    @Override
+    protected void writePersonalInfo() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+        this.output.append(new Heading(profile.getPerson().getSurname() + " " + profile.getPerson().getName())).append("\n");
+        Table.Builder tableBuilder = new Table.Builder()
+                .withAlignments(Table.ALIGN_CENTER)
+                .addRow("", "");
 
-		tableBuilder.addRow(this.resourceBundle.getString("email"), this.profile.getPerson().getAddress().getEmail());
+        tableBuilder.addRow(this.resourceBundle.getString("birthday"),
+                sdf.format(this.profile.getPerson().getBirthday()));
 
-		tableBuilder.addRow(this.resourceBundle.getString("internet"),
-				this.profile.getPerson().getAddress().getInternet());
-		this.output.append(tableBuilder.build()).append("\n\n");
-	}
+        tableBuilder.addRow(this.resourceBundle.getString("title"),
+                String.join(", ", this.profile.getPerson().getTitle()));
 
-	/**
-	 * Write the introduction.
-	 */
-	private void writeIntroduction() {
-		this.output.append(new Heading(this.resourceBundle.getString("profile_header"))).append("\n");
-		this.output.append(new Text(this.profile.getPerson().getConclusion())).append("\n\n");
-	}
+        tableBuilder.addRow(this.resourceBundle.getString("email"),
+                this.profile.getPerson().getAddress().getEmail());
 
-	/**
-	 * Write Vita.
-	 */
-	private void writeVita() {
-		this.output.append(new Heading(this.resourceBundle.getString("work_experience"), 2)).append("\n");
-		this.output.append(new UnorderedList<>(this.service.sortVitaByDateDesc(VitaEntry::getEnd))).append("\n\n");
-	}
+        tableBuilder.addRow(this.resourceBundle.getString("internet"),
+                this.profile.getPerson().getAddress().getInternet());
+        this.output.append(tableBuilder.build()).append("\n\n");
+    }
 
-	/**
-	 * Write projects.
-	 */
-	private void writeProjects() {
-		this.output.append(new Heading(this.resourceBundle.getString("project_experience"), 2)).append("\n");
-		this.service.sortProjectsByDateDesc(Project::getEnd).forEach(this::writeProject);
-	}
+    @Override
+    protected void writeIntroduction() {
+        this.output.append(new Heading(this.resourceBundle.getString("profile_header"))).append("\n");
+        this.output.append(new Text(this.profile.getPerson().getConclusion())).append("\n\n");
+    }
 
-	/**
-	 * Write project.
-	 *
-	 * @param project
-	 *            {@link Project}
-	 */
-	private void writeProject(Project project) {
-		this.output.append(new Heading(project.getName(), 3)).append("\n");
-		Table.Builder tableBuilder = new Table.Builder().withAlignments(Table.ALIGN_CENTER).addRow(
-				this.resourceBundle.getString("start"), this.resourceBundle.getString("end"),
-				this.resourceBundle.getString("duration"), this.resourceBundle.getString("industry"),
-				this.resourceBundle.getString("role"), this.resourceBundle.getString("involved_persons"));
+    @Override
+    protected void writeVita() {
+        this.output.append(new Heading(this.resourceBundle.getString("work_experience"), 2)).append("\n");
+        this.output.append(new UnorderedList<>(this.service.sortVitaByDateDesc(VitaEntry::getEnd))).append("\n\n");
+    }
 
-		Period duration = DateUtils.calculatePeriod(project.getStart(), project.getEnd());
+    @Override
+    protected void writeProjects() {
+        this.output.append(new Heading(this.resourceBundle.getString("project_experience"), 2)).append("\n");
+        this.service.sortProjectsByDateDesc(Project::getEnd).forEach(this::writeProject);
+    }
 
-		tableBuilder.addRow(DateUtils.format(project.getStart()), DateUtils.format(project.getEnd()),
-				DateUtils.format(duration), project.getIndustry(), project.getRole(), project.getTeamSize());
+    @Override
+    protected void writeProject(Project project) {
+        this.output.append(new Heading(project.getName(), 3)).append("\n");
+        Table.Builder tableBuilder = new Table.Builder()
+                .withAlignments(Table.ALIGN_CENTER)
+                .addRow(this.resourceBundle.getString("start"),
+                        this.resourceBundle.getString("end"),
+                        this.resourceBundle.getString("duration"),
+                        this.resourceBundle.getString("industry"),
+                        this.resourceBundle.getString("role"),
+                        this.resourceBundle.getString("involved_persons"));
 
-		this.output.append(tableBuilder.build()).append("\n\n");
-		this.writeTechnologyStack(project.getTechStack());
-		this.output.append(new Text(project.getDescription())).append("\n");
-		this.output.append(new Heading(this.resourceBundle.getString("tasks"), 4)).append("\n");
-		this.output.append(new UnorderedList<>(project.getTasks())).append("\n\n");
-		this.output.append(new HorizontalRule()).append("\n\n");
-	}
+        Period duration = DateUtils.calculatePeriod(project.getStart(), project.getEnd());
 
-	/**
-	 * Write technology stack.
-	 *
-	 * @param skills
-	 *            {@link Skill} Skill List
-	 */
-	private void writeTechnologyStack(List<Skill> skills) {
-		this.output.append(new Heading(this.resourceBundle.getString("technology"), 4)).append("\n");
+        tableBuilder.addRow(DateUtils.format(project.getStart()),
+                DateUtils.format(project.getEnd()),
+                DateUtils.format(duration),
+                project.getIndustry(),
+                project.getRole(),
+                project.getTeamSize());
 
-		Table.Builder tableBuilder = new Table.Builder().withAlignments(Table.ALIGN_CENTER).addRow(
-				this.resourceBundle.getString("name"), this.resourceBundle.getString("versions"),
-				this.resourceBundle.getString("category"));
+        this.output.append(tableBuilder.build()).append("\n\n");
+        this.writeTechnologyStack(project.getTechStack());
+        this.output.append(new Text(project.getDescription())).append("\n");
+        this.output.append(new Heading(this.resourceBundle.getString("tasks"), 4)).append("\n");
+        this.output.append(new UnorderedList<>(project.getTasks())).append("\n\n");
+        this.output.append(new HorizontalRule()).append("\n\n");
+    }
 
-		// Sort Skills
-		skills.stream().sorted(Comparator.comparing(Skill::getCat)).forEach(row -> {
-			tableBuilder.addRow(row.getEntry(), String.join(", ", row.getVersions()), row.getCat());
-		});
+    @Override
+    protected void writeTechnologyStack(List<Skill> skills) {
+        this.output.append(new Heading(this.resourceBundle.getString("technology"), 4)).append("\n");
 
-		this.output.append(tableBuilder.build()).append("\n\n");
-	}
+        Table.Builder tableBuilder = new Table.Builder()
+                .withAlignments(Table.ALIGN_CENTER)
+                .addRow(this.resourceBundle.getString("name"),
+                        this.resourceBundle.getString("versions"),
+                        this.resourceBundle.getString("category"));
 
-	/**
-	 * Write skill matrix.
-	 */
-	private void writeSkillMatrix() {
-		this.output.append(new Heading(this.resourceBundle.getString("qualification"), 2)).append("\n");
-		this.service.getAggregatedSkillMapByCategories().entrySet().forEach(this::writeSkillCategory);
-		this.output.append("\n");
-	}
+        //Sort Skills
+        skills.stream().sorted(Comparator.comparing(Skill::getCat)).forEach(row -> {
+            tableBuilder.addRow(
+                    row.getEntry(),
+                    String.join(", ", row.getVersions()),
+                    row.getCat());
+        });
 
-	/**
-	 * Write skill category
-	 *
-	 * @param category
-	 */
-	private void writeSkillCategory(Map.Entry<String, List<AggregatedSkillMapEntry>> category) {
-		this.output.append(new Heading(category.getKey(), 3)).append("\n");
-		Table.Builder tableBuilder = new Table.Builder().withAlignments(Table.ALIGN_CENTER).addRow(
-				this.resourceBundle.getString("name"), this.resourceBundle.getString("versions"),
-				this.resourceBundle.getString("duration"), this.resourceBundle.getString("project_count"));
+        this.output.append(tableBuilder.build()).append("\n\n");
+    }
 
-		category.getValue().forEach(row -> {
-			tableBuilder.addRow(row.getEntry(), String.join(", ", row.getVersions()), DateUtils.format(row.getPeriod()),
-					row.getProjectAmount());
-		});
-		this.output.append(tableBuilder.build()).append("\n");
-	}
+    @Override
+    protected void writeSkillMatrix() {
+        this.output.append(new Heading(this.resourceBundle.getString("qualification"), 2)).append("\n");
+        this.service.getAggregatedSkillMapByCategories().entrySet().forEach(this::writeSkillCategory);
+        this.output.append("\n");
+    }
 
-	/**
-	 * Write industry skill matrix
-	 */
-	private void writeIndustrySkillMatrix() {
-		this.output.append(new Heading(this.resourceBundle.getString("industry_qualification"), 2)).append("\n");
-		Table.Builder tableBuilder = new Table.Builder().withAlignments(Table.ALIGN_CENTER).addRow(
-				this.resourceBundle.getString("industry"), this.resourceBundle.getString("duration"),
-				this.resourceBundle.getString("project_count"));
+    @Override
+    protected void writeSkillCategory(Map.Entry<String, List<AggregatedSkillMapEntry>> category) {
+        this.output.append(new Heading(category.getKey(), 3)).append("\n");
+        Table.Builder tableBuilder = new Table.Builder()
+                .withAlignments(Table.ALIGN_CENTER)
+                .addRow(this.resourceBundle.getString("name"),
+                        this.resourceBundle.getString("versions"),
+                        this.resourceBundle.getString("duration"),
+                        this.resourceBundle.getString("project_count"));
 
-		this.service.getAggregatedIndustryMap().entrySet().forEach(entry -> {
-			tableBuilder.addRow(entry.getKey(), DateUtils.format(entry.getValue().getPeriod()),
-					entry.getValue().getProjectAmount());
-		});
-		this.output.append(tableBuilder.build()).append("\n");
-	}
+        category.getValue().forEach(row -> {
+            tableBuilder.addRow(
+                    row.getEntry(),
+                    String.join(", ", row.getVersions()),
+                    DateUtils.format(row.getPeriod()),
+                    row.getProjectAmount());
+        });
+        this.output.append(tableBuilder.build()).append("\n");
+    }
+
+    @Override
+    protected void writeIndustrySkillMatrix() {
+        this.output.append(new Heading(this.resourceBundle.getString("industry_qualification"), 2)).append("\n");
+        Table.Builder tableBuilder = new Table.Builder()
+                .withAlignments(Table.ALIGN_CENTER)
+                .addRow(this.resourceBundle.getString("industry"),
+                        this.resourceBundle.getString("duration"),
+                        this.resourceBundle.getString("project_count"));
+
+        this.service.getAggregatedIndustryMap().entrySet().forEach(entry -> {
+            tableBuilder.addRow(
+                    entry.getKey(),
+                    DateUtils.format(entry.getValue().getPeriod()),
+                    entry.getValue().getProjectAmount());
+        });
+        this.output.append(tableBuilder.build()).append("\n");
+    }
+
 
 }

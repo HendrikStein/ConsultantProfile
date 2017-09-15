@@ -41,10 +41,22 @@ public class ProfileService {
      * @return Map of aggregated industry experience
      */
     public Map<String, AggregatedIndustryMapEntry> getAggregatedIndustryMap() {
-        return this.profile.getProjects()
+
+        Map<String, AggregatedIndustryMapEntry> result = this.profile.getProjects()
                 .stream()
                 .map(this::mapProjectsToAggregatedIndustryMapEntry)
                 .collect(Collectors.groupingBy(AggregatedIndustryMapEntry::getIndustry, new AggregatedIndustryCollector()));
+
+        Comparator<Map.Entry<String, AggregatedIndustryMapEntry>> comparator
+                = (e1, e2) -> DateUtils.periodToDays(e2.getValue().getPeriod()) - DateUtils.periodToDays(e1.getValue().getPeriod());
+
+
+        Map<String, AggregatedIndustryMapEntry> sortedResult = result.entrySet()
+                .stream()
+                .sorted(comparator)
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+
+        return sortedResult;
     }
 
 

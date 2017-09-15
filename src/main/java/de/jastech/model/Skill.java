@@ -2,6 +2,8 @@ package de.jastech.model;
 
 import lombok.Data;
 
+import java.util.Iterator;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -28,10 +30,33 @@ public class Skill {
         this.versions = versions;
     }
 
-    public Skill(){
+    public Skill() {
         // Empty constructor
     }
 
-   
+    private String toStringByEntryAndVersions() {
+        if (Objects.nonNull(this.versions) && !this.versions.isEmpty()) {
+            return this.entry + " (" + String.join(", ", versions) + ")";
+        }
+        return this.entry;
+    }
 
+    /**
+     * Join Skill Strings.
+     *
+     * @param delimiter String delimiter
+     * @param skills    Iterable of {@link Skill}
+     * @return Joined String of skills
+     */
+    public static String joinToString(String delimiter, Iterable<Skill> skills) {
+        Iterator<Skill> iterator = skills.iterator();
+        StringBuilder sb = new StringBuilder();
+        while (iterator.hasNext()) {
+            sb.append(iterator.next().toStringByEntryAndVersions());
+            if (iterator.hasNext()) {
+                sb.append(delimiter);
+            }
+        }
+        return sb.toString();
+    }
 }

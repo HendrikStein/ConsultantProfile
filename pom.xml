@@ -18,7 +18,7 @@
 					<include>**/*.json</include>
 				</includes>
 			</resource>
-			
+
 			<resource>
 				<directory>resources</directory>
 				<includes>
@@ -90,6 +90,12 @@
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
 			<version>RELEASE</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.16</version>
 		</dependency>
 	</dependencies>
 

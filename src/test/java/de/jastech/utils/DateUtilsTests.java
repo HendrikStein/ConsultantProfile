@@ -111,4 +111,16 @@ public class DateUtilsTests {
         Period period = DateUtils.calculatePeriod(startDate, endDate);
         Assertions.assertEquals(Period.of(0,4,0), period);
     }
+    
+    @Test
+    public void testIsTodayPositive(){
+        Assertions.assertTrue(DateUtils.isToday(new Date()));
+    }
+
+    @Test
+    public void testEmptyDateFormat(){
+        Date date = null;
+        Assertions.assertEquals("heute", DateUtils.format(date));
+    }
+
 }

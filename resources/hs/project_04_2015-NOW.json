@@ -1,5 +1,5 @@
 {
-  "industry": "Bank",
+  "industry": "Finanzdienstleister",
   "name": "Migration und Neuentwicklung im Bankenumfeld",
   "customer": "Finanzinformatik",
   "role": "Softwareentwickler/Architekt",
@@ -50,12 +50,12 @@
       "versions":[]
     },
     {
-      "entry": "Google Guice",
+      "entry": "Guice",
       "cat": "Framework",
       "versions":[]
     },
     {
-      "entry": "Svn",
+      "entry": "SVN",
       "cat": "SCM",
       "versions":[]
     },

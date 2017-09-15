@@ -18,7 +18,7 @@ public class VitaEntry {
         StringBuilder builder = new StringBuilder();
         builder.append(DateUtils.format(start))
                 .append(" - ")
-                .append(end == null ? "heute" : DateUtils.format(end))
+                .append(DateUtils.format(end))
                 .append("\r")
                 .append(station);
         return builder.toString();
@@ -30,4 +30,5 @@ public class VitaEntry {
         }
         return end;
     }
+
 }

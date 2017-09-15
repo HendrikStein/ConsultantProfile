@@ -24,8 +24,21 @@ public class DateUtils {
      * @return the formatted date
      */
     public static String format(Date date) {
-        Objects.requireNonNull(date);
+        if (Objects.isNull(date)|| isToday(date)) {
+            return "heute";
+        }
         return formatter.format(date);
+    }
+
+    /**
+     * Checks if the given date is today.
+     *
+     * @param date {@link Date}
+     * @return <b>true</b> if same date as today (dd/MM/yyyy) <b>else</b> false
+     */
+    public static boolean isToday(Date date) {
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("dd/MM/yyyy");
+        return dateFormatter.format(date).equals(dateFormatter.format(new Date()));
     }
 
     /**
@@ -90,7 +103,7 @@ public class DateUtils {
      */
     public static Period calculatePeriod(Date start, Date end) {
         LocalDate startDate = LocalDate.now();
-        if(start != null) {
+        if (start != null) {
             startDate = start.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
         }
 

@@ -1,5 +1,7 @@
 package de.jastech.collectors;
 
+import de.jastech.model.AggregatedIndustryMapEntry;
+
 import java.util.EnumSet;
 import java.util.Set;
 import java.util.function.BiConsumer;
@@ -7,8 +9,6 @@ import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collector;
-
-import de.jastech.model.AggregatedIndustryMapEntry;
 
 /**
  * @author Hendrik Stein
