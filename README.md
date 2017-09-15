@@ -25,9 +25,9 @@ Berufserfahrung
 Projekterfahrungen
 ------------------
 ### Migration und Neuentwicklung im Bankenumfeld
-|  Start  |  Ende   |      Dauer       | Branche |            Rolle             | Teamgröße |
-|:-------:|:-------:|:----------------:|:-------:|:----------------------------:|:---------:|
-| 02/2015 | 07/2017 | 2 Jahre 5 Monate |  Bank   | Softwareentwickler/Architekt |     7     |
+|  Start  | Ende  |      Dauer       |       Branche       |            Rolle             | Teamgröße |
+|:-------:|:-----:|:----------------:|:-------------------:|:----------------------------:|:---------:|
+| 02/2015 | heute | 2 Jahre 7 Monate | Finanzdienstleister | Softwareentwickler/Architekt |     7     |
 
 #### Eingesetzte Technologien
 |             Name             | Versionen |      Kategorie       |
@@ -39,12 +39,12 @@ Projekterfahrungen
 |          Stapes Js           |           |      Framework       |
 |          Jasmine Js          |           |      Framework       |
 |          Require Js          |           |      Framework       |
-|         Google Guice         |           |      Framework       |
+|            Guice             |           |      Framework       |
 |            OsPlus            |           |      Framework       |
 | Websphere Application Server |           |    Infrastruktur     |
 |          Javascript          |  ECMA 5   |  Programmiersprache  |
 |             Java             |     6     |  Programmiersprache  |
-|             Svn              |           |         SCM          |
+|             SVN              |           |         SCM          |
 
 Umstellung der bestehenden Giro Produktverkauf Portalanwendung auf eine moderne hybride Web Applikation mittels des OSPlus Neo Frameworks.
 #### Tätigkeiten
@@ -682,8 +682,8 @@ Qualifikationen
 ### Entwicklungsumgebung
 |        Name        | Versionen |      Dauer       | Projekteinsätze |
 |:------------------:|:---------:|:----------------:|:---------------:|
-|      Eclipse       |           | 9 Jahre 4 Monate |       16        |
-|      Webstorm      |           | 2 Jahre 5 Monate |        1        |
+|      Eclipse       |           | 9 Jahre 6 Monate |       16        |
+|      Webstorm      |           | 2 Jahre 7 Monate |        1        |
 |       AS/400       |           |    10 Monate     |        1        |
 | Oracle JDeveloper  |           |     7 Monate     |        1        |
 |      IntelliJ      |           |     6 Monate     |        1        |
@@ -698,7 +698,7 @@ Qualifikationen
 |             Name             |  Versionen   |      Dauer       | Projekteinsätze |
 |:----------------------------:|:------------:|:----------------:|:---------------:|
 |            Tomcat            | 6, 5.5, 7, 5 |     5 Jahre      |       13        |
-| Websphere Application Server |              | 2 Jahre 5 Monate |        1        |
+| Websphere Application Server |              | 2 Jahre 7 Monate |        1        |
 |        Sun Glassfish         |    2.2.1     | 1 Jahr 7 Monate  |        4        |
 |        Elasticsearch         |     1.0      | 1 Jahr 3 Monate  |        1        |
 |          Hazelcast           |              | 1 Jahr 3 Monate  |        1        |
@@ -710,9 +710,9 @@ Qualifikationen
 ### Programmiersprache
 |    Name    |   Versionen    |       Dauer       | Projekteinsätze |
 |:----------:|:--------------:|:-----------------:|:---------------:|
-|    Java    |   6, 5, 7, 8   | 9 Jahre 9 Monate  |       16        |
+|    Java    |   6, 5, 7, 8   | 9 Jahre 11 Monate |       16        |
 |    SQL     |                |      7 Jahre      |       14        |
-| Javascript | ECMA 5, ECMA 6 |      3 Jahre      |        3        |
+| Javascript | ECMA 5, ECMA 6 | 3 Jahre 2 Monate  |        3        |
 |    JEE     |       5        | 2 Jahre 11 Monate |        6        |
 |     C      |                |      1 Jahr       |        2        |
 | (ILE)-RPG  |                |     10 Monate     |        1        |
@@ -732,9 +732,9 @@ Qualifikationen
 ### Build
 |  Name   | Versionen |      Dauer       | Projekteinsätze |
 |:-------:|:---------:|:----------------:|:---------------:|
-|   ANT   |           | 7 Jahre 7 Monate |       10        |
+|   ANT   |           | 7 Jahre 9 Monate |       10        |
 | Jenkins |           |     5 Jahre      |       10        |
-|  Maven  |           | 4 Jahre 7 Monate |        7        |
+|  Maven  |           | 4 Jahre 9 Monate |        7        |
 | Hudson  |           |     6 Monate     |        2        |
 ### Datenbank
 |       Name       | Versionen  |      Dauer       | Projekteinsätze |
@@ -744,11 +744,10 @@ Qualifikationen
 |     MongoDB      | 2.6.3, 3.2 | 2 Jahre 5 Monate |        3        |
 | Amazon Simple DB |            |     2 Monate     |        1        |
 ### SCM
-| Name | Versionen |       Dauer       | Projekteinsätze |
-|:----:|:---------:|:-----------------:|:---------------:|
-| SVN  |           | 4 Jahre 11 Monate |       12        |
-| GIT  |           | 2 Jahre 7 Monate  |        5        |
-| Svn  |           | 2 Jahre 5 Monate  |        1        |
+| Name | Versionen |      Dauer       | Projekteinsätze |
+|:----:|:---------:|:----------------:|:---------------:|
+| SVN  |           | 7 Jahre 6 Monate |       13        |
+| GIT  |           | 2 Jahre 7 Monate |        5        |
 ### Test Tools
 |       Name        | Versionen |  Dauer   | Projekteinsätze |
 |:-----------------:|:---------:|:--------:|:---------------:|
@@ -758,15 +757,14 @@ Qualifikationen
 ### Framework
 |         Name         |   Versionen   |       Dauer       | Projekteinsätze |
 |:--------------------:|:-------------:|:-----------------:|:---------------:|
+|        Guice         |      3.0      | 4 Jahre 6 Monate  |        3        |
 |        Spring        | 3.0, 3, 2.0.5 | 3 Jahre 7 Monate  |       10        |
 |      Hibernate       |      3.3      | 2 Jahre 10 Monate |        7        |
 |        Struts        |     1.2.9     | 2 Jahre 8 Monate  |        6        |
-|      Jasmine Js      |               | 2 Jahre 5 Monate  |        1        |
-|      Require Js      |               | 2 Jahre 5 Monate  |        1        |
-|     Google Guice     |               | 2 Jahre 5 Monate  |        1        |
-|        OsPlus        |               | 2 Jahre 5 Monate  |        1        |
-|      Stapes Js       |               | 2 Jahre 5 Monate  |        1        |
-|        Guice         |      3.0      | 1 Jahr 11 Monate  |        2        |
+|      Jasmine Js      |               | 2 Jahre 7 Monate  |        1        |
+|      Require Js      |               | 2 Jahre 7 Monate  |        1        |
+|        OsPlus        |               | 2 Jahre 7 Monate  |        1        |
+|      Stapes Js       |               | 2 Jahre 7 Monate  |        1        |
 |     Google Guava     |               | 1 Jahr 11 Monate  |        2        |
 |       Easymock       |      3.1      | 1 Jahr 11 Monate  |        2        |
 |       Aspect J       |               | 1 Jahr 11 Monate  |        2        |
@@ -790,15 +788,15 @@ Qualifikationen
 
 Branchen Qualifikationen
 ------------------------
-|      Branche      |      Dauer       | Projekteinsätze |
-|:-----------------:|:----------------:|:---------------:|
-|     Industrie     |     6 Monate     |        2        |
-|       Bank        | 2 Jahre 5 Monate |        1        |
-|   Social Media    |     2 Jahre      |        3        |
-| Telekommunikation | 1 Jahr 4 Monate  |        3        |
-| Gesundheitswesen  | 1 Jahr 9 Monate  |        5        |
-|   Versicherung    |     8 Monate     |        2        |
-|    Modebranche    |    10 Monate     |        1        |
-|    Werkstudent    |     9 Monate     |        1        |
-|        Fun        |     1 Monat      |        1        |
-|   Diplomarbeit    |     7 Monate     |        1        |
+|       Branche       |      Dauer       | Projekteinsätze |
+|:-------------------:|:----------------:|:---------------:|
+| Finanzdienstleister | 2 Jahre 7 Monate |        1        |
+|    Social Media     |     2 Jahre      |        3        |
+|  Gesundheitswesen   | 1 Jahr 9 Monate  |        5        |
+|  Telekommunikation  | 1 Jahr 4 Monate  |        3        |
+|     Modebranche     |    10 Monate     |        1        |
+|     Werkstudent     |     9 Monate     |        1        |
+|    Versicherung     |     8 Monate     |        2        |
+|    Diplomarbeit     |     7 Monate     |        1        |
+|      Industrie      |     6 Monate     |        2        |
+|         Fun         |     1 Monat      |        1        |
