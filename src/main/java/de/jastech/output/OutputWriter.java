@@ -11,104 +11,112 @@ import java.util.Map;
 import java.util.ResourceBundle;
 
 /**
+ * Abstract output writer.
+ * 
  * @author Hendrik Stein
  */
 public abstract class OutputWriter {
 
-    /**
-     * Write Project
-     *
-     * @param filename
-     */
-    public void write(String filename) {
-        try {
-            this.writePersonalInfo();
-            this.writeIntroduction();
-            this.writeVita();
-            this.writeProjects();
-            this.writeSkillMatrix();
-            this.writeIndustrySkillMatrix();
-            this.writeFile(filename);
-            System.out.println("Document " + filename + this.getFileType() + " created");
-        } catch (IOException ex) {
-            System.err.print(ex);
-        }
-
+  /**
+   * Write Project.
+   *
+   * @param filename file name
+   */
+  public void write(String filename) {
+    try {
+      this.writePersonalInfo();
+      this.writeIntroduction();
+      this.writeVita();
+      this.writeProjects();
+      this.writeSkillMatrix();
+      this.writeIndustrySkillMatrix();
+      this.writeFile(filename);
+      System.out.println("Document " + filename + this.getFileType() + " created");
+    } catch (IOException ex) {
+      System.err.print(ex);
     }
 
-    /**
-     * Get the {@link ResourceBundle}.
-     *
-     * @param locale {@link Locale}
-     * @return the {@link ResourceBundle}
-     */
-    protected final ResourceBundle getResourceBundle(Locale locale) {
-        return ResourceBundle.getBundle("Profile", locale);
-    }
+  }
 
-    /**
-     * Get file Type for writer
-     *
-     * @return File type
-     */
-    abstract String getFileType();
+  /**
+   * Get the {@link ResourceBundle}.
+   *
+   * @param locale
+   *          {@link Locale}
+   * @return the {@link ResourceBundle}
+   */
+  protected final ResourceBundle getResourceBundle(Locale locale) {
+    return ResourceBundle.getBundle("Profile", locale);
+  }
 
-    /**
-     * Write personal info
-     */
-    abstract void writePersonalInfo();
+  /**
+   * Get file Type for writer.
+   *
+   * @return File type
+   */
+  abstract String getFileType();
 
-    /**
-     * Write personal introduction
-     */
-    abstract void writeIntroduction();
+  /**
+   * Write personal info.
+   */
+  abstract void writePersonalInfo();
 
-    /**
-     * Write vitae
-     */
-    abstract void writeVita();
+  /**
+   * Write personal introduction.
+   */
+  abstract void writeIntroduction();
 
-    /**
-     * Write projects
-     */
-    abstract void writeProjects();
+  /**
+   * Write vitae.
+   */
+  abstract void writeVita();
 
-    /**
-     * Write project.
-     *
-     * @param project {@link Project}
-     */
-    abstract void writeProject(Project project);
+  /**
+   * Write projects.
+   */
+  abstract void writeProjects();
 
-    /**
-     * Write technology stack.
-     *
-     * @param skills {@link Skill} Skill List
-     */
-    abstract void writeTechnologyStack(List<Skill> skills);
+  /**
+   * Write project.
+   *
+   * @param project
+   *          {@link Project}
+   */
+  abstract void writeProject(Project project);
 
-    /**
-     * Write skill matrix.
-     */
-    abstract void writeSkillMatrix();
+  /**
+   * Write technology stack.
+   *
+   * @param skills
+   *          {@link Skill} Skill List
+   */
+  abstract void writeTechnologyStack(List<Skill> skills);
 
-    /**
-     * Write skill category
-     *
-     * @param category
-     */
-    abstract void writeSkillCategory(Map.Entry<String, List<AggregatedSkillMapEntry>> category);
+  /**
+   * Write skill matrix.
+   */
+  abstract void writeSkillMatrix();
 
-    /**
-     * Write industry skill matrix
-     */
-    abstract void writeIndustrySkillMatrix();
+  /**
+   * Write skill category.
+   *
+   * @param category
+   *          categories
+   */
+  abstract void writeSkillCategory(Map.Entry<String, List<AggregatedSkillMapEntry>> category);
 
-    /**
-     * Write file.
-     *
-     * @param filename Filename
-     * @throws IOException
-     */
-    abstract void writeFile(String filename) throws IOException;
+  /**
+   * Write industry skill matrix.
+   */
+  abstract void writeIndustrySkillMatrix();
+
+  /**
+   * Write file.
+   *
+   * @param filename
+   *          Filename
+   * @throws IOException
+   *           if io exception occurs
+   */
+  abstract void writeFile(String filename) throws IOException;
 }
