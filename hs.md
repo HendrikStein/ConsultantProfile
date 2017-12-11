@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/HendrikStein/ConsultantProfile.svg?branch=master)](https://travis-ci.org/HendrikStein/ConsultantProfile) 
+[![Build Status](https://travis-ci.org/HendrikStein/ConsultantProfile.svg?branch=master)](https://travis-ci.org/HendrikStein/ConsultantProfile)
+
 Hendrik Stein
 =============
 |            |                                                           |

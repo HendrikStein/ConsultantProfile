@@ -53,10 +53,12 @@ public class MarkdownWriter extends OutputWriter {
 
   @Override
   public void write(String filename) {
-    this.output.append("[![Build Status](https://travis-ci.org/HendrikStein/ConsultantProfile.svg?branch=master)](https://travis-ci.org/HendrikStein/ConsultantProfile) \n");
+    this.output.append(
+        "[![Build Status](https://travis-ci.org/HendrikStein/ConsultantProfile.svg?branch=master)](https://travis-ci.org/HendrikStein/ConsultantProfile)");
+    this.output.append("\n\n");
     super.write(filename);
   }
-  
+
   @Override
   protected void writeFile(String filename) throws IOException {
     BufferedWriter bw = new BufferedWriter(new FileWriter(filename + this.getFileType()));

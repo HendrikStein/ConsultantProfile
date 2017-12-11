@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/HendrikStein/ConsultantProfile.svg?branch=master)](https://travis-ci.org/HendrikStein/ConsultantProfile)
+
 Hendrik Stein
 =============
 |            |                                                           |
@@ -25,9 +27,9 @@ Berufserfahrung
 Projekterfahrungen
 ------------------
 ### Migration und Neuentwicklung im Bankenumfeld
-|  Start  | Ende  |      Dauer       |       Branche       |            Rolle             | Teamgröße |
-|:-------:|:-----:|:----------------:|:-------------------:|:----------------------------:|:---------:|
-| 02/2015 | heute | 2 Jahre 7 Monate | Finanzdienstleister | Softwareentwickler/Architekt |     7     |
+|  Start  | Ende  |       Dauer       |       Branche       |            Rolle             | Teamgröße |
+|:-------:|:-----:|:-----------------:|:-------------------:|:----------------------------:|:---------:|
+| 02/2015 | heute | 2 Jahre 10 Monate | Finanzdienstleister | Softwareentwickler/Architekt |     7     |
 
 #### Eingesetzte Technologien
 |             Name             | Versionen |      Kategorie       |
@@ -537,30 +539,6 @@ Erstellung einer Webapplikation zur Angebotsverwaltung.
 
 ---
 
-### Last- Performance und Skalierungstests
-|  Start  |  Ende   |  Dauer   |   Branche    |       Rolle        | Teamgröße |
-|:-------:|:-------:|:--------:|:------------:|:------------------:|:---------:|
-| 03/2009 | 05/2009 | 2 Monate | Versicherung | Softwareentwickler |     4     |
-
-#### Eingesetzte Technologien
-|       Name        | Versionen |     Kategorie      |
-|:-----------------:|:---------:|:------------------:|
-|         C         |           | Programmiersprache |
-| HP Quality Center |           |     Test Tools     |
-|   HP Loadrunner   |           |     Test Tools     |
-|    HP Analyser    |           |     Test Tools     |
-
-Last-, Performance- und Skalierungstests eines Verwaltungssystems für Vertragsdaten
-#### Tätigkeiten
-- Testkonzepterstellung
-- Konfiguration der Testumgebung
-- Testfalldefinition mit dem HP Quality Center
-- Testfallaufzeichnung mit dem HP Loadrunner
-- Testfallanpassung mittels C
-- Testfallauswertung mit dem HP Analyser
-
----
-
 ### Entwicklung eines ERP Adapters
 |  Start  |  Ende   |  Dauer   |  Branche  |       Rolle        | Teamgröße |
 |:-------:|:-------:|:--------:|:---------:|:------------------:|:---------:|
@@ -588,6 +566,30 @@ Anbindung der Amazon Simple DB mittels SOAP-Web Services an ein ERP System (Orac
 - Anbindung einer Teilnehmer -Onlineanmeldung für die practica 2013
 - Erstellung der Web Services
 - Anbindung der Webservices an das Oracle Apex System
+
+---
+
+### Last- Performance und Skalierungstests
+|  Start  |  Ende   |  Dauer   |   Branche    |       Rolle        | Teamgröße |
+|:-------:|:-------:|:--------:|:------------:|:------------------:|:---------:|
+| 03/2009 | 05/2009 | 2 Monate | Versicherung | Softwareentwickler |     4     |
+
+#### Eingesetzte Technologien
+|       Name        | Versionen |     Kategorie      |
+|:-----------------:|:---------:|:------------------:|
+|         C         |           | Programmiersprache |
+| HP Quality Center |           |     Test Tools     |
+|   HP Loadrunner   |           |     Test Tools     |
+|    HP Analyser    |           |     Test Tools     |
+
+Last-, Performance- und Skalierungstests eines Verwaltungssystems für Vertragsdaten
+#### Tätigkeiten
+- Testkonzepterstellung
+- Konfiguration der Testumgebung
+- Testfalldefinition mit dem HP Quality Center
+- Testfallaufzeichnung mit dem HP Loadrunner
+- Testfallanpassung mittels C
+- Testfallauswertung mit dem HP Analyser
 
 ---
 
@@ -680,14 +682,14 @@ Mitarbeit im Projekt 'Neues Vertriebsinformationssystem' und Programmierung von 
 Qualifikationen
 ---------------
 ### Entwicklungsumgebung
-|        Name        | Versionen |      Dauer       | Projekteinsätze |
-|:------------------:|:---------:|:----------------:|:---------------:|
-|      Eclipse       |           | 9 Jahre 6 Monate |       16        |
-|      Webstorm      |           | 2 Jahre 7 Monate |        1        |
-|       AS/400       |           |    10 Monate     |        1        |
-| Oracle JDeveloper  |           |     7 Monate     |        1        |
-|      IntelliJ      |           |     6 Monate     |        1        |
-| Visual Studio Code |           |     1 Monat      |        1        |
+|        Name        | Versionen |       Dauer       | Projekteinsätze |
+|:------------------:|:---------:|:-----------------:|:---------------:|
+|      Eclipse       |           | 9 Jahre 9 Monate  |       16        |
+|      Webstorm      |           | 2 Jahre 10 Monate |        1        |
+|       AS/400       |           |     10 Monate     |        1        |
+| Oracle JDeveloper  |           |     7 Monate      |        1        |
+|      IntelliJ      |           |     6 Monate      |        1        |
+| Visual Studio Code |           |      1 Monat      |        1        |
 ### Modellierung
 |         Name         | Versionen |      Dauer      | Projekteinsätze |
 |:--------------------:|:---------:|:---------------:|:---------------:|
@@ -695,14 +697,14 @@ Qualifikationen
 |      BPA Suite       |           | 1 Jahr 4 Monate |        2        |
 | Enterprise Architekt |           |    4 Monate     |        1        |
 ### Infrastruktur
-|             Name             |  Versionen   |      Dauer       | Projekteinsätze |
-|:----------------------------:|:------------:|:----------------:|:---------------:|
-|            Tomcat            | 6, 5.5, 7, 5 |     5 Jahre      |       13        |
-| Websphere Application Server |              | 2 Jahre 7 Monate |        1        |
-|        Sun Glassfish         |    2.2.1     | 1 Jahr 7 Monate  |        4        |
-|        Elasticsearch         |     1.0      | 1 Jahr 3 Monate  |        1        |
-|          Hazelcast           |              | 1 Jahr 3 Monate  |        1        |
-|         Oracle Apex          |    3.1.2     |     2 Monate     |        1        |
+|             Name             |  Versionen   |       Dauer       | Projekteinsätze |
+|:----------------------------:|:------------:|:-----------------:|:---------------:|
+|            Tomcat            | 5.5, 6, 7, 5 |      5 Jahre      |       13        |
+| Websphere Application Server |              | 2 Jahre 10 Monate |        1        |
+|        Sun Glassfish         |    2.2.1     |  1 Jahr 7 Monate  |        4        |
+|        Elasticsearch         |     1.0      |  1 Jahr 3 Monate  |        1        |
+|          Hazelcast           |              |  1 Jahr 3 Monate  |        1        |
+|         Oracle Apex          |    3.1.2     |     2 Monate      |        1        |
 ### Projekt Management
 |  Name  | Versionen |  Dauer   | Projekteinsätze |
 |:------:|:---------:|:--------:|:---------------:|
@@ -710,9 +712,9 @@ Qualifikationen
 ### Programmiersprache
 |    Name    |   Versionen    |       Dauer       | Projekteinsätze |
 |:----------:|:--------------:|:-----------------:|:---------------:|
-|    Java    |   6, 5, 7, 8   | 9 Jahre 11 Monate |       16        |
+|    Java    |   6, 5, 7, 8   | 10 Jahre 2 Monate |       16        |
 |    SQL     |                |      7 Jahre      |       14        |
-| Javascript | ECMA 5, ECMA 6 | 3 Jahre 2 Monate  |        3        |
+| Javascript | ECMA 6, ECMA 5 | 3 Jahre 5 Monate  |        3        |
 |    JEE     |       5        | 2 Jahre 11 Monate |        6        |
 |     C      |                |      1 Jahr       |        2        |
 | (ILE)-RPG  |                |     10 Monate     |        1        |
@@ -730,23 +732,23 @@ Qualifikationen
 | Mantis |           | 1 Jahr 7 Monate  |        4        |
 |  Trac  |           |     9 Monate     |        1        |
 ### Build
-|  Name   | Versionen |      Dauer       | Projekteinsätze |
-|:-------:|:---------:|:----------------:|:---------------:|
-|   ANT   |           | 7 Jahre 9 Monate |       10        |
-| Jenkins |           |     5 Jahre      |       10        |
-|  Maven  |           | 4 Jahre 9 Monate |        7        |
-| Hudson  |           |     6 Monate     |        2        |
+|  Name   | Versionen |  Dauer   | Projekteinsätze |
+|:-------:|:---------:|:--------:|:---------------:|
+|   ANT   |           | 8 Jahre  |       10        |
+|  Maven  |           | 5 Jahre  |        7        |
+| Jenkins |           | 5 Jahre  |       10        |
+| Hudson  |           | 6 Monate |        2        |
 ### Datenbank
 |       Name       | Versionen  |      Dauer       | Projekteinsätze |
 |:----------------:|:----------:|:----------------:|:---------------:|
-|      mySQL       |   5.5, 5   | 3 Jahre 9 Monate |        8        |
+|      mySQL       |   5, 5.5   | 3 Jahre 9 Monate |        8        |
 |      Oracle      |    10g     | 3 Jahre 2 Monate |        7        |
 |     MongoDB      | 2.6.3, 3.2 | 2 Jahre 5 Monate |        3        |
 | Amazon Simple DB |            |     2 Monate     |        1        |
 ### SCM
 | Name | Versionen |      Dauer       | Projekteinsätze |
 |:----:|:---------:|:----------------:|:---------------:|
-| SVN  |           | 7 Jahre 6 Monate |       13        |
+| SVN  |           | 7 Jahre 9 Monate |       13        |
 | GIT  |           | 2 Jahre 7 Monate |        5        |
 ### Test Tools
 |       Name        | Versionen |  Dauer   | Projekteinsätze |
@@ -757,14 +759,14 @@ Qualifikationen
 ### Framework
 |         Name         |   Versionen   |       Dauer       | Projekteinsätze |
 |:--------------------:|:-------------:|:-----------------:|:---------------:|
-|        Guice         |      3.0      | 4 Jahre 6 Monate  |        3        |
-|        Spring        | 3.0, 3, 2.0.5 | 3 Jahre 7 Monate  |       10        |
+|        Guice         |      3.0      | 4 Jahre 9 Monate  |        3        |
+|        Spring        | 2.0.5, 3.0, 3 | 3 Jahre 7 Monate  |       10        |
+|      Jasmine Js      |               | 2 Jahre 10 Monate |        1        |
+|      Require Js      |               | 2 Jahre 10 Monate |        1        |
+|        OsPlus        |               | 2 Jahre 10 Monate |        1        |
+|      Stapes Js       |               | 2 Jahre 10 Monate |        1        |
 |      Hibernate       |      3.3      | 2 Jahre 10 Monate |        7        |
 |        Struts        |     1.2.9     | 2 Jahre 8 Monate  |        6        |
-|      Jasmine Js      |               | 2 Jahre 7 Monate  |        1        |
-|      Require Js      |               | 2 Jahre 7 Monate  |        1        |
-|        OsPlus        |               | 2 Jahre 7 Monate  |        1        |
-|      Stapes Js       |               | 2 Jahre 7 Monate  |        1        |
 |     Google Guava     |               | 1 Jahr 11 Monate  |        2        |
 |       Easymock       |      3.1      | 1 Jahr 11 Monate  |        2        |
 |       Aspect J       |               | 1 Jahr 11 Monate  |        2        |
@@ -772,10 +774,10 @@ Qualifikationen
 |       Swagger        |               |  1 Jahr 9 Monate  |        2        |
 |    Apache Wicket     |     1.4.9     |  1 Jahr 7 Monate  |        4        |
 |         EJB          |      3.0      |  1 Jahr 7 Monate  |        4        |
-|     Apache Click     |  2.3.0, 2.3   |     9 Monate      |        3        |
+|     Apache Click     |  2.3, 2.3.0   |     9 Monate      |        3        |
 |        Lucene        |      4.0      |     8 Monate      |        1        |
 |      Apache CXF      |               |     7 Monate      |        2        |
-|       Angular        |     2, 1      |     7 Monate      |        2        |
+|       Angular        |     1, 2      |     7 Monate      |        2        |
 |       ChartsJS       |               |     6 Monate      |        1        |
 |     Spring Boot      |     4.3.8     |     6 Monate      |        1        |
 |        Aspose        |               |     6 Monate      |        1        |
@@ -788,15 +790,15 @@ Qualifikationen
 
 Branchen Qualifikationen
 ------------------------
-|       Branche       |      Dauer       | Projekteinsätze |
-|:-------------------:|:----------------:|:---------------:|
-| Finanzdienstleister | 2 Jahre 7 Monate |        1        |
-|    Social Media     |     2 Jahre      |        3        |
-|  Gesundheitswesen   | 1 Jahr 9 Monate  |        5        |
-|  Telekommunikation  | 1 Jahr 4 Monate  |        3        |
-|     Modebranche     |    10 Monate     |        1        |
-|     Werkstudent     |     9 Monate     |        1        |
-|    Versicherung     |     8 Monate     |        2        |
-|    Diplomarbeit     |     7 Monate     |        1        |
-|      Industrie      |     6 Monate     |        2        |
-|         Fun         |     1 Monat      |        1        |
+|       Branche       |       Dauer       | Projekteinsätze |
+|:-------------------:|:-----------------:|:---------------:|
+| Finanzdienstleister | 2 Jahre 10 Monate |        1        |
+|    Social Media     |      2 Jahre      |        3        |
+|  Gesundheitswesen   |  1 Jahr 9 Monate  |        5        |
+|  Telekommunikation  |  1 Jahr 4 Monate  |        3        |
+|     Modebranche     |     10 Monate     |        1        |
+|     Werkstudent     |     9 Monate      |        1        |
+|    Versicherung     |     8 Monate      |        2        |
+|    Diplomarbeit     |     7 Monate      |        1        |
+|      Industrie      |     6 Monate      |        2        |
+|         Fun         |      1 Monat      |        1        |
